@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo/gallary</title>
+    <style>
+        
+        *{
+            box-sizing: border-box;
+            margin: 0%;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        body{
+            background-color: ghostwhite;
+        }
+        header{
+            background-color: rgb(181, 118, 240);
+            text-align: center;
+            padding: 40px;
+            animation: change 10s;
+            animation-iteration-count: infinite;
+            animation-fill-mode: forwards;
+            color: #ddd;
+        }
+        nav{
+            display: flex;
+            overflow: hidden;
+            background-color: rgb(208, 172, 241);
+            justify-content: space-around;
+            position: sticky;
+            top: .1px;
+            z-index: 2;
+            border-bottom: 1px dashed rgb(158, 152, 152);
+        }
+        nav>a{
+            text-decoration: none;
+            padding:10px;
+            font-size: large;
+            font-weight: bolder;
+            color: black;
+        }
+        nav a:hover{
+            background-color: #ddd;
+        }
+        @media screen and (max-width:500px){
+            nav{
+                flex-direction: column;
+                justify-content: space-between;
+            }
+            nav a{
+                padding:10px;
+                /* font-size:medium; */
+            }
+            main{
+                flex-direction: column;
+            }    
+        }
+        main{
+            /* border: 2px solid; */
+            /* margin: 5px 10px; */
+            height: 700px;
+            overflow: auto;
+            background-color: rgb(220, 194, 245);
+        }
+        .contain{
+            text-align: center;
+            /* border: 1px solid; */
+            width: 350px;
+            height: 350px;
+            margin: auto;
+            margin-top: 100px;
+        }
+        
+     
+        
+        footer{
+            bottom:0;
+            text-align:center;
+            padding:10px;
+            overflow: hidden;
+            color:white;
+            text-shadow:1px 1px 2px black;
+            background-color: rgb(181, 118, 240);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>आपली पोरं</h1>
+        <p>At Your Won Risk!</p>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="photo.html">Photos</a>
+        <a href="video.html">Videos</a>
+    </nav>
+    <main >
+        <div class="contain">
+            <h3>Welcome to My World!</h3><br><br>
+            <p>Here we provides with you आपली पोरं photos and videos.just go to upper links and enjoy the joy full experience.
+               
+            </p>
+        </div>
+
+    </main>
+    <footer>
+        <p>&copy;Copyright 2021 Abhi.com-All Rights Reserved.</p>
+    </footer>
+    <script>
+        
+    </script>
+    
+        
+</body>
+</html>
